@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
+var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -230,10 +230,11 @@ implements android.os.Parcelable</pre>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>static <a href="DriverLicenseDetailedInfo.html" title="class in com.microblink.documentverification.entities.recognizers.blinkid.generic">DriverLicenseDetailedInfo</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createFromNative(java.lang.String,java.lang.String,java.lang.String,java.lang.String)">createFromNative</a></span>&#8203;(java.lang.String&nbsp;restrictions,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createFromNative(java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.microblink.documentverification.entities.recognizers.blinkid.generic.VehicleClassInfo%5B%5D)">createFromNative</a></span>&#8203;(java.lang.String&nbsp;restrictions,
                 java.lang.String&nbsp;endorsements,
                 java.lang.String&nbsp;vehicleClass,
-                java.lang.String&nbsp;conditions)</code></th>
+                java.lang.String&nbsp;conditions,
+                <a href="VehicleClassInfo.html" title="class in com.microblink.documentverification.entities.recognizers.blinkid.generic">VehicleClassInfo</a>[]&nbsp;vehicleClassesInfo)</code></th>
 <td class="colLast">
 <div class="block">This method is called from native code to build <a href="DriverLicenseDetailedInfo.html" title="class in com.microblink.documentverification.entities.recognizers.blinkid.generic"><code>DriverLicenseDetailedInfo</code></a> from native object.</div>
 </td>
@@ -272,13 +273,20 @@ implements android.os.Parcelable</pre>
 </td>
 </tr>
 <tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="VehicleClassInfo.html" title="class in com.microblink.documentverification.entities.recognizers.blinkid.generic">VehicleClassInfo</a>[]</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getVehicleClassesInfo()">getVehicleClassesInfo</a></span>()</code></th>
+<td class="colLast">
+<div class="block">The additional information on vehicle class.</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isEmpty()">isEmpty</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Checks whether data is empty.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeToParcel(android.os.Parcel,int)">writeToParcel</a></span>&#8203;(android.os.Parcel&nbsp;dest,
              int&nbsp;flags)</code></th>
@@ -380,6 +388,17 @@ public&nbsp;java.lang.String&nbsp;getVehicleClass()</pre>
 <div class="block">The type of vehicle the driver license owner has privilege to drive.</div>
 </li>
 </ul>
+<a id="getVehicleClassesInfo()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getVehicleClassesInfo</h4>
+<pre class="methodSignature">@NonNull
+public&nbsp;<a href="VehicleClassInfo.html" title="class in com.microblink.documentverification.entities.recognizers.blinkid.generic">VehicleClassInfo</a>[]&nbsp;getVehicleClassesInfo()</pre>
+<div class="block">The additional information on vehicle class.</div>
+</li>
+</ul>
 <a id="getConditions()">
 <!--   -->
 </a>
@@ -405,7 +424,7 @@ public&nbsp;java.lang.String&nbsp;getConditions()</pre>
 </dl>
 </li>
 </ul>
-<a id="createFromNative(java.lang.String,java.lang.String,java.lang.String,java.lang.String)">
+<a id="createFromNative(java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.microblink.documentverification.entities.recognizers.blinkid.generic.VehicleClassInfo[])">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -419,7 +438,9 @@ public static&nbsp;<a href="DriverLicenseDetailedInfo.html" title="class in com.
                                                          @NonNull
                                                          java.lang.String&nbsp;vehicleClass,
                                                          @NonNull
-                                                         java.lang.String&nbsp;conditions)</pre>
+                                                         java.lang.String&nbsp;conditions,
+                                                         @NonNull
+                                                         <a href="VehicleClassInfo.html" title="class in com.microblink.documentverification.entities.recognizers.blinkid.generic">VehicleClassInfo</a>[]&nbsp;vehicleClassesInfo)</pre>
 <div class="block">This method is called from native code to build <a href="DriverLicenseDetailedInfo.html" title="class in com.microblink.documentverification.entities.recognizers.blinkid.generic"><code>DriverLicenseDetailedInfo</code></a> from native object.</div>
 </li>
 </ul>

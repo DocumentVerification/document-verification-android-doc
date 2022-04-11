@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -230,6 +230,16 @@ extends <a href="../blinkid/BlinkIdOverlayController.html" title="class in com.m
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onFragmentResumed()">onFragmentResumed</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onFragmentSaveInstanceState(android.os.Bundle)">onFragmentSaveInstanceState</a></span>&#8203;(android.os.Bundle&nbsp;outState)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onRecognizerRunnerViewCreated(com.microblink.documentverification.fragment.RecognizerRunnerFragment)">onRecognizerRunnerViewCreated</a></span>&#8203;(<a href="../../RecognizerRunnerFragment.html" title="class in com.microblink.documentverification.fragment">RecognizerRunnerFragment</a>&nbsp;recognizerRunnerFragment)</code></th>
 <td class="colLast">
@@ -237,7 +247,7 @@ extends <a href="../blinkid/BlinkIdOverlayController.html" title="class in com.m
  <a href="../../RecognizerRunnerFragment.html" title="class in com.microblink.documentverification.fragment"><code>RecognizerRunnerFragment</code></a>.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>protected boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#shouldResetStateOnRecognizerResume()">shouldResetStateOnRecognizerResume</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
@@ -248,7 +258,7 @@ extends <a href="../blinkid/BlinkIdOverlayController.html" title="class in com.m
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;com.microblink.documentverification.fragment.overlay.blinkid.<a href="../blinkid/BlinkIdOverlayController.html" title="class in com.microblink.documentverification.fragment.overlay.blinkid">BlinkIdOverlayController</a></h3>
-<code><a href="../blinkid/BlinkIdOverlayController.html#getBeepSoundResourceId()">getBeepSoundResourceId</a>, <a href="../blinkid/BlinkIdOverlayController.html#getHighResImagesBundle()">getHighResImagesBundle</a>, <a href="../blinkid/BlinkIdOverlayController.html#getRecognizerBundle()">getRecognizerBundle</a>, <a href="../blinkid/BlinkIdOverlayController.html#getSplashScreenLayoutId()">getSplashScreenLayoutId</a>, <a href="../blinkid/BlinkIdOverlayController.html#onCameraAutofocusFailed()">onCameraAutofocusFailed</a>, <a href="../blinkid/BlinkIdOverlayController.html#onFragmentConfigurationChanged(android.content.res.Configuration)">onFragmentConfigurationChanged</a>, <a href="../blinkid/BlinkIdOverlayController.html#onFragmentPaused()">onFragmentPaused</a>, <a href="../blinkid/BlinkIdOverlayController.html#onFragmentResumed()">onFragmentResumed</a>, <a href="../blinkid/BlinkIdOverlayController.html#onFragmentSaveInstanceState(android.os.Bundle)">onFragmentSaveInstanceState</a>, <a href="../blinkid/BlinkIdOverlayController.html#onFrameRecognitionDone(com.microblink.documentverification.recognition.RecognitionSuccessType)">onFrameRecognitionDone</a>, <a href="../blinkid/BlinkIdOverlayController.html#onScanningDone(com.microblink.documentverification.recognition.RecognitionSuccessType)">onScanningDone</a>, <a href="../blinkid/BlinkIdOverlayController.html#pauseScanning()">pauseScanning</a>, <a href="../blinkid/BlinkIdOverlayController.html#resumeScanning()">resumeScanning</a></code></li>
+<code><a href="../blinkid/BlinkIdOverlayController.html#getBeepSoundResourceId()">getBeepSoundResourceId</a>, <a href="../blinkid/BlinkIdOverlayController.html#getHighResImagesBundle()">getHighResImagesBundle</a>, <a href="../blinkid/BlinkIdOverlayController.html#getRecognizerBundle()">getRecognizerBundle</a>, <a href="../blinkid/BlinkIdOverlayController.html#getSplashScreenLayoutId()">getSplashScreenLayoutId</a>, <a href="../blinkid/BlinkIdOverlayController.html#onCameraAutofocusFailed()">onCameraAutofocusFailed</a>, <a href="../blinkid/BlinkIdOverlayController.html#onFragmentConfigurationChanged(android.content.res.Configuration)">onFragmentConfigurationChanged</a>, <a href="../blinkid/BlinkIdOverlayController.html#onFragmentPaused()">onFragmentPaused</a>, <a href="../blinkid/BlinkIdOverlayController.html#onFrameRecognitionDone(com.microblink.documentverification.recognition.RecognitionSuccessType)">onFrameRecognitionDone</a>, <a href="../blinkid/BlinkIdOverlayController.html#onScanningDone(com.microblink.documentverification.recognition.RecognitionSuccessType)">onScanningDone</a>, <a href="../blinkid/BlinkIdOverlayController.html#pauseScanning()">pauseScanning</a>, <a href="../blinkid/BlinkIdOverlayController.html#resumeScanning()">resumeScanning</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.com.microblink.documentverification.fragment.overlay.BaseOverlayController">
@@ -375,6 +385,33 @@ extends <a href="../blinkid/BlinkIdOverlayController.html" title="class in com.m
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../blinkid/BlinkIdOverlayController.html#onFirstSideScanStarted()">onFirstSideScanStarted</a></code>&nbsp;in class&nbsp;<code><a href="../blinkid/BlinkIdOverlayController.html" title="class in com.microblink.documentverification.fragment.overlay.blinkid">BlinkIdOverlayController</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="onFragmentResumed()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onFragmentResumed</h4>
+<pre class="methodSignature">protected&nbsp;void&nbsp;onFragmentResumed()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../blinkid/BlinkIdOverlayController.html#onFragmentResumed()">onFragmentResumed</a></code>&nbsp;in class&nbsp;<code><a href="../blinkid/BlinkIdOverlayController.html" title="class in com.microblink.documentverification.fragment.overlay.blinkid">BlinkIdOverlayController</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="onFragmentSaveInstanceState(android.os.Bundle)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onFragmentSaveInstanceState</h4>
+<pre class="methodSignature">protected&nbsp;void&nbsp;onFragmentSaveInstanceState&#8203;(@Nullable
+                                           android.os.Bundle&nbsp;outState)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../blinkid/BlinkIdOverlayController.html#onFragmentSaveInstanceState(android.os.Bundle)">onFragmentSaveInstanceState</a></code>&nbsp;in class&nbsp;<code><a href="../blinkid/BlinkIdOverlayController.html" title="class in com.microblink.documentverification.fragment.overlay.blinkid">BlinkIdOverlayController</a></code></dd>
 </dl>
 </li>
 </ul>

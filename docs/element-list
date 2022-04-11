@@ -5,7 +5,6 @@ com.microblink.documentverification.entities
 com.microblink.documentverification.entities.recognizers
 com.microblink.documentverification.entities.recognizers.blinkbarcode
 com.microblink.documentverification.entities.recognizers.blinkid
-com.microblink.documentverification.entities.recognizers.blinkid.digitalsignature
 com.microblink.documentverification.entities.recognizers.blinkid.generic
 com.microblink.documentverification.entities.recognizers.blinkid.generic.barcode
 com.microblink.documentverification.entities.recognizers.blinkid.generic.classinfo
