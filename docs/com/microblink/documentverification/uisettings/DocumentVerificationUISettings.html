@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -122,7 +122,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
-<li><a href="UISettings.html" title="class in com.microblink.documentverification.uisettings">com.microblink.documentverification.uisettings.UISettings</a>&lt;<a href="../fragment/overlay/blinkid/BlinkIdOverlayController.html" title="class in com.microblink.documentverification.fragment.overlay.blinkid">BlinkIdOverlayController</a>&gt;</li>
+<li><a href="UISettings.html" title="class in com.microblink.documentverification.uisettings">com.microblink.documentverification.uisettings.UISettings</a>&lt;<a href="../fragment/overlay/documentverification/DocumentVerificationOverlayController.html" title="class in com.microblink.documentverification.fragment.overlay.documentverification">DocumentVerificationOverlayController</a>&gt;</li>
 <li>
 <ul class="inheritance">
 <li>com.microblink.documentverification.uisettings.DocumentVerificationUISettings</li>
@@ -140,7 +140,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">DocumentVerificationUISettings</span>
-extends <a href="UISettings.html" title="class in com.microblink.documentverification.uisettings">UISettings</a>&lt;<a href="../fragment/overlay/blinkid/BlinkIdOverlayController.html" title="class in com.microblink.documentverification.fragment.overlay.blinkid">BlinkIdOverlayController</a>&gt;
+extends <a href="UISettings.html" title="class in com.microblink.documentverification.uisettings">UISettings</a>&lt;<a href="../fragment/overlay/documentverification/DocumentVerificationOverlayController.html" title="class in com.microblink.documentverification.fragment.overlay.documentverification">DocumentVerificationOverlayController</a>&gt;
 implements <a href="options/BeepSoundUIOptions.html" title="interface in com.microblink.documentverification.uisettings.options">BeepSoundUIOptions</a>, <a href="options/DebugImageListenerUIOptions.html" title="interface in com.microblink.documentverification.uisettings.options">DebugImageListenerUIOptions</a>, <a href="options/CurrentImageListenerUIOptions.html" title="interface in com.microblink.documentverification.uisettings.options">CurrentImageListenerUIOptions</a>, <a href="options/HighResSuccessFrameCaptureUIOptions.html" title="interface in com.microblink.documentverification.uisettings.options">HighResSuccessFrameCaptureUIOptions</a>, <a href="options/SplashScreenUIOptions.html" title="interface in com.microblink.documentverification.uisettings.options">SplashScreenUIOptions</a>, <a href="options/OcrResultDisplayUIOptions.html" title="interface in com.microblink.documentverification.uisettings.options">OcrResultDisplayUIOptions</a>, <a href="options/DocumentDataMatchUIOptions.html" title="interface in com.microblink.documentverification.uisettings.options">DocumentDataMatchUIOptions</a>, <a href="options/MrzDetectionUIOptions.html" title="interface in com.microblink.documentverification.uisettings.options">MrzDetectionUIOptions</a>, <a href="options/DocumentNotSupportedDialogUIOptions.html" title="interface in com.microblink.documentverification.uisettings.options">DocumentNotSupportedDialogUIOptions</a>, <a href="options/BackSideScanningTimeoutUIOptions.html" title="interface in com.microblink.documentverification.uisettings.options">BackSideScanningTimeoutUIOptions</a>, <a href="options/StringsUIOptions.html" title="interface in com.microblink.documentverification.uisettings.options">StringsUIOptions</a>&lt;<a href="../fragment/overlay/documentverification/DocumentVerificationStrings.html" title="class in com.microblink.documentverification.fragment.overlay.documentverification">DocumentVerificationStrings</a>&gt;, <a href="options/StyleUIOptions.html" title="interface in com.microblink.documentverification.uisettings.options">StyleUIOptions</a>, <a href="options/FlashlightWarningUIOptions.html" title="interface in com.microblink.documentverification.uisettings.options">FlashlightWarningUIOptions</a></pre>
 </li>
 </ul>
@@ -205,7 +205,7 @@ implements <a href="options/BeepSoundUIOptions.html" title="interface in com.mic
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../fragment/overlay/blinkid/BlinkIdOverlayController.html" title="class in com.microblink.documentverification.fragment.overlay.blinkid">BlinkIdOverlayController</a></code></td>
+<td class="colFirst"><code><a href="../fragment/overlay/documentverification/DocumentVerificationOverlayController.html" title="class in com.microblink.documentverification.fragment.overlay.documentverification">DocumentVerificationOverlayController</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createOverlayController(android.app.Activity,com.microblink.documentverification.view.recognition.ScanResultListener)">createOverlayController</a></span>&#8203;(android.app.Activity&nbsp;activity,
                        <a href="../view/recognition/ScanResultListener.html" title="interface in com.microblink.documentverification.view.recognition">ScanResultListener</a>&nbsp;scanResultListener)</code></th>
 <td class="colLast">
@@ -299,33 +299,40 @@ implements <a href="options/BeepSoundUIOptions.html" title="interface in com.mic
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDocumentTypeUi(com.microblink.documentverification.fragment.overlay.documentverification.settings.options.DocumentTypeUi)">setDocumentTypeUi</a></span>&#8203;(<a href="../fragment/overlay/documentverification/settings/options/DocumentTypeUi.html" title="enum in com.microblink.documentverification.fragment.overlay.documentverification.settings.options">DocumentTypeUi</a>&nbsp;documentTypeUi)</code></th>
+<td class="colLast">
+<div class="block">Sets document type for the onboarding and info screen UI.</div>
+</td>
+</tr>
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setKeepScreenOn(boolean)">setKeepScreenOn</a></span>&#8203;(boolean&nbsp;keepScreenOn)</code></th>
 <td class="colLast">
 <div class="block">Defines whether system timeout will be disabled and screen kept always ON while scanning document.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setOcrResultDisplayMode(com.microblink.documentverification.uisettings.options.OcrResultDisplayMode)">setOcrResultDisplayMode</a></span>&#8203;(<a href="options/OcrResultDisplayMode.html" title="enum in com.microblink.documentverification.uisettings.options">OcrResultDisplayMode</a>&nbsp;ocrResultDisplayMode)</code></th>
 <td class="colLast">
 <div class="block">Defines mode in which OCR result will be drawn on camera preview.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setOverlayViewStyle(int)">setOverlayViewStyle</a></span>&#8203;(int&nbsp;styleResourceID)</code></th>
 <td class="colLast">
 <div class="block">Provide your own style to replace default icons and colors.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setShowFlashlightWarning(boolean)">setShowFlashlightWarning</a></span>&#8203;(boolean&nbsp;showFlashlightWarning)</code></th>
 <td class="colLast">
 <div class="block">Defines whether flashlight warning will be displayed in UI, when flashlight is turned ON.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setShowHoldInHandDialog(boolean)">setShowHoldInHandDialog</a></span>&#8203;(boolean&nbsp;showHoldInHandDialog)</code></th>
 <td class="colLast">
@@ -333,7 +340,7 @@ implements <a href="options/BeepSoundUIOptions.html" title="interface in com.mic
  hand at the beginning of the scanning process.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setShowMrzDetection(boolean)">setShowMrzDetection</a></span>&#8203;(boolean&nbsp;showOcrResult)</code></th>
 <td class="colLast">
@@ -341,21 +348,21 @@ implements <a href="options/BeepSoundUIOptions.html" title="interface in com.mic
  <code>true</code>.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setShowNotSupportedDialog(boolean)">setShowNotSupportedDialog</a></span>&#8203;(boolean&nbsp;showNotSupportedDialog)</code></th>
 <td class="colLast">
 <div class="block">Defines whether Document Not Supported dialog will be displayed in UI, default is <code>true</code>.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setShowTooltipTimeIntervalMs(long)">setShowTooltipTimeIntervalMs</a></span>&#8203;(long&nbsp;showTooltipTimeIntervalMs)</code></th>
 <td class="colLast">
 <div class="block">Sets time interval between the start of the tilt step and displaying the help tooltip.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setSplashScreenLayoutResourceID(int)">setSplashScreenLayoutResourceID</a></span>&#8203;(int&nbsp;splashScreenLayoutResourceID)</code></th>
 <td class="colLast">
@@ -363,28 +370,28 @@ implements <a href="options/BeepSoundUIOptions.html" title="interface in com.mic
  while camera is being initialized.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setStrings(com.microblink.documentverification.fragment.overlay.documentverification.DocumentVerificationStrings)">setStrings</a></span>&#8203;(<a href="../fragment/overlay/documentverification/DocumentVerificationStrings.html" title="class in com.microblink.documentverification.fragment.overlay.documentverification">DocumentVerificationStrings</a>&nbsp;strings)</code></th>
 <td class="colLast">
 <div class="block">Sets strings that will be used in the UI.</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setTiltStartTimeIntervalMs(long)">setTiltStartTimeIntervalMs</a></span>&#8203;(long&nbsp;tiltStartTimeInterval)</code></th>
 <td class="colLast">
 <div class="block">Sets time interval between neutral tilt step and first tilt step (left, right, top or down).</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setTiltStepTimeoutIntervalMs(long)">setTiltStepTimeoutIntervalMs</a></span>&#8203;(long&nbsp;tiltStepTimeoutInterval)</code></th>
 <td class="colLast">
 <div class="block">Sets timeout interval for each tilt step.</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>protected boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#shouldKeepScreenOn()">shouldKeepScreenOn</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
@@ -476,7 +483,7 @@ public&nbsp;<a href="../entities/recognizers/documentverification/DocumentVerifi
  DO NOT USE THIS METHOD UNLESS YOU KNOW WHAT YOU ARE DOING. Improper usage will crash your app.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="UISettings.html#saveToIntent(android.content.Intent)">saveToIntent</a></code>&nbsp;in class&nbsp;<code><a href="UISettings.html" title="class in com.microblink.documentverification.uisettings">UISettings</a>&lt;<a href="../fragment/overlay/blinkid/BlinkIdOverlayController.html" title="class in com.microblink.documentverification.fragment.overlay.blinkid">BlinkIdOverlayController</a>&gt;</code></dd>
+<dd><code><a href="UISettings.html#saveToIntent(android.content.Intent)">saveToIntent</a></code>&nbsp;in class&nbsp;<code><a href="UISettings.html" title="class in com.microblink.documentverification.uisettings">UISettings</a>&lt;<a href="../fragment/overlay/documentverification/DocumentVerificationOverlayController.html" title="class in com.microblink.documentverification.fragment.overlay.documentverification">DocumentVerificationOverlayController</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>intent</code> - Intent to which this scan activity settings should be saved.</dd>
 </dl>
@@ -835,6 +842,20 @@ protected&nbsp;<a href="../fragment/overlay/documentverification/DocumentVerific
 <pre class="methodSignature">protected&nbsp;boolean&nbsp;shouldKeepScreenOn()</pre>
 </li>
 </ul>
+<a id="setDocumentTypeUi(com.microblink.documentverification.fragment.overlay.documentverification.settings.options.DocumentTypeUi)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setDocumentTypeUi</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setDocumentTypeUi&#8203;(<a href="../fragment/overlay/documentverification/settings/options/DocumentTypeUi.html" title="enum in com.microblink.documentverification.fragment.overlay.documentverification.settings.options">DocumentTypeUi</a>&nbsp;documentTypeUi)</pre>
+<div class="block">Sets document type for the onboarding and info screen UI.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>documentTypeUi</code> - type of the document.</dd>
+</dl>
+</li>
+</ul>
 <a id="getTargetActivity()">
 <!--   -->
 </a>
@@ -849,7 +870,7 @@ public&nbsp;java.lang.Class&lt;?&gt;&nbsp;getTargetActivity()</pre>
  DO NOT USE THIS METHOD UNLESS YOU KNOW WHAT YOU ARE DOING. Improper usage will crash your app.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="UISettings.html#getTargetActivity()">getTargetActivity</a></code>&nbsp;in class&nbsp;<code><a href="UISettings.html" title="class in com.microblink.documentverification.uisettings">UISettings</a>&lt;<a href="../fragment/overlay/blinkid/BlinkIdOverlayController.html" title="class in com.microblink.documentverification.fragment.overlay.blinkid">BlinkIdOverlayController</a>&gt;</code></dd>
+<dd><code><a href="UISettings.html#getTargetActivity()">getTargetActivity</a></code>&nbsp;in class&nbsp;<code><a href="UISettings.html" title="class in com.microblink.documentverification.uisettings">UISettings</a>&lt;<a href="../fragment/overlay/documentverification/DocumentVerificationOverlayController.html" title="class in com.microblink.documentverification.fragment.overlay.documentverification">DocumentVerificationOverlayController</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>target activity.</dd>
 </dl>
@@ -862,15 +883,15 @@ public&nbsp;java.lang.Class&lt;?&gt;&nbsp;getTargetActivity()</pre>
 <li class="blockList">
 <h4>createOverlayController</h4>
 <pre class="methodSignature">@NonNull
-public&nbsp;<a href="../fragment/overlay/blinkid/BlinkIdOverlayController.html" title="class in com.microblink.documentverification.fragment.overlay.blinkid">BlinkIdOverlayController</a>&nbsp;createOverlayController&#8203;(@NonNull
-                                                        android.app.Activity&nbsp;activity,
-                                                        @NonNull
-                                                        <a href="../view/recognition/ScanResultListener.html" title="interface in com.microblink.documentverification.view.recognition">ScanResultListener</a>&nbsp;scanResultListener)</pre>
+public&nbsp;<a href="../fragment/overlay/documentverification/DocumentVerificationOverlayController.html" title="class in com.microblink.documentverification.fragment.overlay.documentverification">DocumentVerificationOverlayController</a>&nbsp;createOverlayController&#8203;(@NonNull
+                                                                     android.app.Activity&nbsp;activity,
+                                                                     @NonNull
+                                                                     <a href="../view/recognition/ScanResultListener.html" title="interface in com.microblink.documentverification.view.recognition">ScanResultListener</a>&nbsp;scanResultListener)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="UISettings.html#createOverlayController(android.app.Activity,com.microblink.documentverification.view.recognition.ScanResultListener)">UISettings</a></code></span></div>
 <div class="block">Creates overlay controller and configures it using set values.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="UISettings.html#createOverlayController(android.app.Activity,com.microblink.documentverification.view.recognition.ScanResultListener)">createOverlayController</a></code>&nbsp;in class&nbsp;<code><a href="UISettings.html" title="class in com.microblink.documentverification.uisettings">UISettings</a>&lt;<a href="../fragment/overlay/blinkid/BlinkIdOverlayController.html" title="class in com.microblink.documentverification.fragment.overlay.blinkid">BlinkIdOverlayController</a>&gt;</code></dd>
+<dd><code><a href="UISettings.html#createOverlayController(android.app.Activity,com.microblink.documentverification.view.recognition.ScanResultListener)">createOverlayController</a></code>&nbsp;in class&nbsp;<code><a href="UISettings.html" title="class in com.microblink.documentverification.uisettings">UISettings</a>&lt;<a href="../fragment/overlay/documentverification/DocumentVerificationOverlayController.html" title="class in com.microblink.documentverification.fragment.overlay.documentverification">DocumentVerificationOverlayController</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>

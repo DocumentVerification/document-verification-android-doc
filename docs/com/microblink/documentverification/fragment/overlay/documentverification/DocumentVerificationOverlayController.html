@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -125,7 +125,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="../BaseOverlayController.html" title="class in com.microblink.documentverification.fragment.overlay">com.microblink.documentverification.fragment.overlay.BaseOverlayController</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="../blinkid/BlinkIdOverlayController.html" title="class in com.microblink.documentverification.fragment.overlay.blinkid">com.microblink.documentverification.fragment.overlay.blinkid.BlinkIdOverlayController</a></li>
+<li><a href="../blinkid/BaseBlinkIdOverlayController.html" title="class in com.microblink.documentverification.fragment.overlay.blinkid">com.microblink.documentverification.fragment.overlay.blinkid.BaseBlinkIdOverlayController</a></li>
 <li>
 <ul class="inheritance">
 <li>com.microblink.documentverification.fragment.overlay.documentverification.DocumentVerificationOverlayController</li>
@@ -145,7 +145,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">DocumentVerificationOverlayController</span>
-extends <a href="../blinkid/BlinkIdOverlayController.html" title="class in com.microblink.documentverification.fragment.overlay.blinkid">BlinkIdOverlayController</a></pre>
+extends <a href="../blinkid/BaseBlinkIdOverlayController.html" title="class in com.microblink.documentverification.fragment.overlay.blinkid">BaseBlinkIdOverlayController</a></pre>
 </li>
 </ul>
 </div>
@@ -160,11 +160,11 @@ extends <a href="../blinkid/BlinkIdOverlayController.html" title="class in com.m
 </a>
 <h3>Field Summary</h3>
 <ul class="blockList">
-<li class="blockList"><a id="fields.inherited.from.class.com.microblink.documentverification.fragment.overlay.blinkid.BlinkIdOverlayController">
+<li class="blockList"><a id="fields.inherited.from.class.com.microblink.documentverification.fragment.overlay.blinkid.BaseBlinkIdOverlayController">
 <!--   -->
 </a>
-<h3>Fields inherited from class&nbsp;com.microblink.documentverification.fragment.overlay.blinkid.<a href="../blinkid/BlinkIdOverlayController.html" title="class in com.microblink.documentverification.fragment.overlay.blinkid">BlinkIdOverlayController</a></h3>
-<code><a href="../blinkid/BlinkIdOverlayController.html#documentRecognizerManager">documentRecognizerManager</a></code></li>
+<h3>Fields inherited from class&nbsp;com.microblink.documentverification.fragment.overlay.blinkid.<a href="../blinkid/BaseBlinkIdOverlayController.html" title="class in com.microblink.documentverification.fragment.overlay.blinkid">BaseBlinkIdOverlayController</a></h3>
+<code><a href="../blinkid/BaseBlinkIdOverlayController.html#documentRecognizerManager">documentRecognizerManager</a>, <a href="../blinkid/BaseBlinkIdOverlayController.html#imageUploadManager">imageUploadManager</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="fields.inherited.from.class.com.microblink.documentverification.fragment.overlay.BaseOverlayController">
@@ -215,31 +215,36 @@ extends <a href="../blinkid/BlinkIdOverlayController.html" title="class in com.m
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>protected void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onDocumentSideChanged(long)">onDocumentSideChanged</a></span>&#8203;(long&nbsp;firstSideDelay)</code></th>
+<td class="colFirst"><code>protected <a href="../blinkid/ImageUploadManager.html" title="interface in com.microblink.documentverification.fragment.overlay.blinkid">ImageUploadManager</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createImageUploadManager()">createImageUploadManager</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onFirstSideScanStarted()">onFirstSideScanStarted</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onDocumentSideChanged(long)">onDocumentSideChanged</a></span>&#8203;(long&nbsp;firstSideDelay)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onFragmentDestroyed()">onFragmentDestroyed</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onFirstSideScanStarted()">onFirstSideScanStarted</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onFragmentResumed()">onFragmentResumed</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onFragmentDestroyed()">onFragmentDestroyed</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onFragmentSaveInstanceState(android.os.Bundle)">onFragmentSaveInstanceState</a></span>&#8203;(android.os.Bundle&nbsp;outState)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onFragmentResumed()">onFragmentResumed</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onFragmentSaveInstanceState(android.os.Bundle)">onFragmentSaveInstanceState</a></span>&#8203;(android.os.Bundle&nbsp;outState)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onRecognizerRunnerViewCreated(com.microblink.documentverification.fragment.RecognizerRunnerFragment)">onRecognizerRunnerViewCreated</a></span>&#8203;(<a href="../../RecognizerRunnerFragment.html" title="class in com.microblink.documentverification.fragment">RecognizerRunnerFragment</a>&nbsp;recognizerRunnerFragment)</code></th>
 <td class="colLast">
@@ -247,18 +252,18 @@ extends <a href="../blinkid/BlinkIdOverlayController.html" title="class in com.m
  <a href="../../RecognizerRunnerFragment.html" title="class in com.microblink.documentverification.fragment"><code>RecognizerRunnerFragment</code></a>.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>protected boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#shouldResetStateOnRecognizerResume()">shouldResetStateOnRecognizerResume</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.com.microblink.documentverification.fragment.overlay.blinkid.BlinkIdOverlayController">
+<li class="blockList"><a id="methods.inherited.from.class.com.microblink.documentverification.fragment.overlay.blinkid.BaseBlinkIdOverlayController">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;com.microblink.documentverification.fragment.overlay.blinkid.<a href="../blinkid/BlinkIdOverlayController.html" title="class in com.microblink.documentverification.fragment.overlay.blinkid">BlinkIdOverlayController</a></h3>
-<code><a href="../blinkid/BlinkIdOverlayController.html#getBeepSoundResourceId()">getBeepSoundResourceId</a>, <a href="../blinkid/BlinkIdOverlayController.html#getHighResImagesBundle()">getHighResImagesBundle</a>, <a href="../blinkid/BlinkIdOverlayController.html#getRecognizerBundle()">getRecognizerBundle</a>, <a href="../blinkid/BlinkIdOverlayController.html#getSplashScreenLayoutId()">getSplashScreenLayoutId</a>, <a href="../blinkid/BlinkIdOverlayController.html#onCameraAutofocusFailed()">onCameraAutofocusFailed</a>, <a href="../blinkid/BlinkIdOverlayController.html#onFragmentConfigurationChanged(android.content.res.Configuration)">onFragmentConfigurationChanged</a>, <a href="../blinkid/BlinkIdOverlayController.html#onFragmentPaused()">onFragmentPaused</a>, <a href="../blinkid/BlinkIdOverlayController.html#onFrameRecognitionDone(com.microblink.documentverification.recognition.RecognitionSuccessType)">onFrameRecognitionDone</a>, <a href="../blinkid/BlinkIdOverlayController.html#onScanningDone(com.microblink.documentverification.recognition.RecognitionSuccessType)">onScanningDone</a>, <a href="../blinkid/BlinkIdOverlayController.html#pauseScanning()">pauseScanning</a>, <a href="../blinkid/BlinkIdOverlayController.html#resumeScanning()">resumeScanning</a></code></li>
+<h3>Methods inherited from class&nbsp;com.microblink.documentverification.fragment.overlay.blinkid.<a href="../blinkid/BaseBlinkIdOverlayController.html" title="class in com.microblink.documentverification.fragment.overlay.blinkid">BaseBlinkIdOverlayController</a></h3>
+<code><a href="../blinkid/BaseBlinkIdOverlayController.html#getBeepSoundResourceId()">getBeepSoundResourceId</a>, <a href="../blinkid/BaseBlinkIdOverlayController.html#getHighResImagesBundle()">getHighResImagesBundle</a>, <a href="../blinkid/BaseBlinkIdOverlayController.html#getRecognizerBundle()">getRecognizerBundle</a>, <a href="../blinkid/BaseBlinkIdOverlayController.html#getSplashScreenLayoutId()">getSplashScreenLayoutId</a>, <a href="../blinkid/BaseBlinkIdOverlayController.html#onCameraAutofocusFailed()">onCameraAutofocusFailed</a>, <a href="../blinkid/BaseBlinkIdOverlayController.html#onFragmentConfigurationChanged(android.content.res.Configuration)">onFragmentConfigurationChanged</a>, <a href="../blinkid/BaseBlinkIdOverlayController.html#onFragmentPaused()">onFragmentPaused</a>, <a href="../blinkid/BaseBlinkIdOverlayController.html#onFrameRecognitionDone(com.microblink.documentverification.recognition.RecognitionSuccessType)">onFrameRecognitionDone</a>, <a href="../blinkid/BaseBlinkIdOverlayController.html#onScanningDone(com.microblink.documentverification.recognition.RecognitionSuccessType)">onScanningDone</a>, <a href="../blinkid/BaseBlinkIdOverlayController.html#pauseScanning()">pauseScanning</a>, <a href="../blinkid/BaseBlinkIdOverlayController.html#resumeScanning()">resumeScanning</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.com.microblink.documentverification.fragment.overlay.BaseOverlayController">
@@ -343,7 +348,7 @@ extends <a href="../blinkid/BlinkIdOverlayController.html" title="class in com.m
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../ScanningOverlay.html#onRecognizerRunnerViewCreated(com.microblink.documentverification.fragment.RecognizerRunnerFragment)">onRecognizerRunnerViewCreated</a></code>&nbsp;in interface&nbsp;<code><a href="../ScanningOverlay.html" title="interface in com.microblink.documentverification.fragment.overlay">ScanningOverlay</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../blinkid/BlinkIdOverlayController.html#onRecognizerRunnerViewCreated(com.microblink.documentverification.fragment.RecognizerRunnerFragment)">onRecognizerRunnerViewCreated</a></code>&nbsp;in class&nbsp;<code><a href="../blinkid/BlinkIdOverlayController.html" title="class in com.microblink.documentverification.fragment.overlay.blinkid">BlinkIdOverlayController</a></code></dd>
+<dd><code><a href="../blinkid/BaseBlinkIdOverlayController.html#onRecognizerRunnerViewCreated(com.microblink.documentverification.fragment.RecognizerRunnerFragment)">onRecognizerRunnerViewCreated</a></code>&nbsp;in class&nbsp;<code><a href="../blinkid/BaseBlinkIdOverlayController.html" title="class in com.microblink.documentverification.fragment.overlay.blinkid">BaseBlinkIdOverlayController</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>recognizerRunnerFragment</code> - <a href="../../RecognizerRunnerFragment.html" title="class in com.microblink.documentverification.fragment"><code>RecognizerRunnerFragment</code></a> within which <a href="../../../view/recognition/RecognizerRunnerView.html" title="class in com.microblink.documentverification.view.recognition"><code>RecognizerRunnerView</code></a> has been created.</dd>
 </dl>
@@ -358,7 +363,20 @@ extends <a href="../blinkid/BlinkIdOverlayController.html" title="class in com.m
 <pre class="methodSignature">protected&nbsp;boolean&nbsp;shouldResetStateOnRecognizerResume()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../blinkid/BlinkIdOverlayController.html#shouldResetStateOnRecognizerResume()">shouldResetStateOnRecognizerResume</a></code>&nbsp;in class&nbsp;<code><a href="../blinkid/BlinkIdOverlayController.html" title="class in com.microblink.documentverification.fragment.overlay.blinkid">BlinkIdOverlayController</a></code></dd>
+<dd><code><a href="../blinkid/BaseBlinkIdOverlayController.html#shouldResetStateOnRecognizerResume()">shouldResetStateOnRecognizerResume</a></code>&nbsp;in class&nbsp;<code><a href="../blinkid/BaseBlinkIdOverlayController.html" title="class in com.microblink.documentverification.fragment.overlay.blinkid">BaseBlinkIdOverlayController</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="createImageUploadManager()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createImageUploadManager</h4>
+<pre class="methodSignature">protected final&nbsp;<a href="../blinkid/ImageUploadManager.html" title="interface in com.microblink.documentverification.fragment.overlay.blinkid">ImageUploadManager</a>&nbsp;createImageUploadManager()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../blinkid/BaseBlinkIdOverlayController.html#createImageUploadManager()">createImageUploadManager</a></code>&nbsp;in class&nbsp;<code><a href="../blinkid/BaseBlinkIdOverlayController.html" title="class in com.microblink.documentverification.fragment.overlay.blinkid">BaseBlinkIdOverlayController</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -371,7 +389,7 @@ extends <a href="../blinkid/BlinkIdOverlayController.html" title="class in com.m
 <pre class="methodSignature">protected&nbsp;void&nbsp;onDocumentSideChanged&#8203;(long&nbsp;firstSideDelay)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../blinkid/BlinkIdOverlayController.html#onDocumentSideChanged(long)">onDocumentSideChanged</a></code>&nbsp;in class&nbsp;<code><a href="../blinkid/BlinkIdOverlayController.html" title="class in com.microblink.documentverification.fragment.overlay.blinkid">BlinkIdOverlayController</a></code></dd>
+<dd><code><a href="../blinkid/BaseBlinkIdOverlayController.html#onDocumentSideChanged(long)">onDocumentSideChanged</a></code>&nbsp;in class&nbsp;<code><a href="../blinkid/BaseBlinkIdOverlayController.html" title="class in com.microblink.documentverification.fragment.overlay.blinkid">BaseBlinkIdOverlayController</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -384,7 +402,7 @@ extends <a href="../blinkid/BlinkIdOverlayController.html" title="class in com.m
 <pre class="methodSignature">protected&nbsp;void&nbsp;onFirstSideScanStarted()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../blinkid/BlinkIdOverlayController.html#onFirstSideScanStarted()">onFirstSideScanStarted</a></code>&nbsp;in class&nbsp;<code><a href="../blinkid/BlinkIdOverlayController.html" title="class in com.microblink.documentverification.fragment.overlay.blinkid">BlinkIdOverlayController</a></code></dd>
+<dd><code><a href="../blinkid/BaseBlinkIdOverlayController.html#onFirstSideScanStarted()">onFirstSideScanStarted</a></code>&nbsp;in class&nbsp;<code><a href="../blinkid/BaseBlinkIdOverlayController.html" title="class in com.microblink.documentverification.fragment.overlay.blinkid">BaseBlinkIdOverlayController</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -397,7 +415,7 @@ extends <a href="../blinkid/BlinkIdOverlayController.html" title="class in com.m
 <pre class="methodSignature">protected&nbsp;void&nbsp;onFragmentResumed()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../blinkid/BlinkIdOverlayController.html#onFragmentResumed()">onFragmentResumed</a></code>&nbsp;in class&nbsp;<code><a href="../blinkid/BlinkIdOverlayController.html" title="class in com.microblink.documentverification.fragment.overlay.blinkid">BlinkIdOverlayController</a></code></dd>
+<dd><code><a href="../blinkid/BaseBlinkIdOverlayController.html#onFragmentResumed()">onFragmentResumed</a></code>&nbsp;in class&nbsp;<code><a href="../blinkid/BaseBlinkIdOverlayController.html" title="class in com.microblink.documentverification.fragment.overlay.blinkid">BaseBlinkIdOverlayController</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -411,7 +429,7 @@ extends <a href="../blinkid/BlinkIdOverlayController.html" title="class in com.m
                                            android.os.Bundle&nbsp;outState)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../blinkid/BlinkIdOverlayController.html#onFragmentSaveInstanceState(android.os.Bundle)">onFragmentSaveInstanceState</a></code>&nbsp;in class&nbsp;<code><a href="../blinkid/BlinkIdOverlayController.html" title="class in com.microblink.documentverification.fragment.overlay.blinkid">BlinkIdOverlayController</a></code></dd>
+<dd><code><a href="../blinkid/BaseBlinkIdOverlayController.html#onFragmentSaveInstanceState(android.os.Bundle)">onFragmentSaveInstanceState</a></code>&nbsp;in class&nbsp;<code><a href="../blinkid/BaseBlinkIdOverlayController.html" title="class in com.microblink.documentverification.fragment.overlay.blinkid">BaseBlinkIdOverlayController</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -424,7 +442,7 @@ extends <a href="../blinkid/BlinkIdOverlayController.html" title="class in com.m
 <pre class="methodSignature">protected&nbsp;void&nbsp;onFragmentDestroyed()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../blinkid/BlinkIdOverlayController.html#onFragmentDestroyed()">onFragmentDestroyed</a></code>&nbsp;in class&nbsp;<code><a href="../blinkid/BlinkIdOverlayController.html" title="class in com.microblink.documentverification.fragment.overlay.blinkid">BlinkIdOverlayController</a></code></dd>
+<dd><code><a href="../blinkid/BaseBlinkIdOverlayController.html#onFragmentDestroyed()">onFragmentDestroyed</a></code>&nbsp;in class&nbsp;<code><a href="../blinkid/BaseBlinkIdOverlayController.html" title="class in com.microblink.documentverification.fragment.overlay.blinkid">BaseBlinkIdOverlayController</a></code></dd>
 </dl>
 </li>
 </ul>
