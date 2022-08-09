@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -242,49 +242,54 @@ implements <a href="../../blinkid/settings/options/BlinkIdOverlaySettingsOptions
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="DocumentVerificationOverlaySettings.Builder.html" title="class in com.microblink.documentverification.fragment.overlay.documentverification.settings">DocumentVerificationOverlaySettings.Builder</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setKeepScreenOn(boolean)">setKeepScreenOn</a></span>&#8203;(boolean&nbsp;keepScreenOn)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDocumentTypeUi(com.microblink.documentverification.fragment.overlay.documentverification.settings.options.DocumentTypeUi)">setDocumentTypeUi</a></span>&#8203;(<a href="options/DocumentTypeUi.html" title="enum in com.microblink.documentverification.fragment.overlay.documentverification.settings.options">DocumentTypeUi</a>&nbsp;documentTypeUi)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="DocumentVerificationOverlaySettings.Builder.html" title="class in com.microblink.documentverification.fragment.overlay.documentverification.settings">DocumentVerificationOverlaySettings.Builder</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setLockedToPortrait(boolean)">setLockedToPortrait</a></span>&#8203;(boolean&nbsp;lockedToPortrait)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setKeepScreenOn(boolean)">setKeepScreenOn</a></span>&#8203;(boolean&nbsp;keepScreenOn)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="DocumentVerificationOverlaySettings.Builder.html" title="class in com.microblink.documentverification.fragment.overlay.documentverification.settings">DocumentVerificationOverlaySettings.Builder</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setOcrResultDisplayMode(com.microblink.documentverification.uisettings.options.OcrResultDisplayMode)">setOcrResultDisplayMode</a></span>&#8203;(<a href="../../../../uisettings/options/OcrResultDisplayMode.html" title="enum in com.microblink.documentverification.uisettings.options">OcrResultDisplayMode</a>&nbsp;ocrResultDisplayMode)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setLockedToPortrait(boolean)">setLockedToPortrait</a></span>&#8203;(boolean&nbsp;lockedToPortrait)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="DocumentVerificationOverlaySettings.Builder.html" title="class in com.microblink.documentverification.fragment.overlay.documentverification.settings">DocumentVerificationOverlaySettings.Builder</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setShowMrzDots(boolean)">setShowMrzDots</a></span>&#8203;(boolean&nbsp;shouldShowMrzDots)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setOcrResultDisplayMode(com.microblink.documentverification.uisettings.options.OcrResultDisplayMode)">setOcrResultDisplayMode</a></span>&#8203;(<a href="../../../../uisettings/options/OcrResultDisplayMode.html" title="enum in com.microblink.documentverification.uisettings.options">OcrResultDisplayMode</a>&nbsp;ocrResultDisplayMode)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="DocumentVerificationOverlaySettings.Builder.html" title="class in com.microblink.documentverification.fragment.overlay.documentverification.settings">DocumentVerificationOverlaySettings.Builder</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setShowNotSupportedDialog(boolean)">setShowNotSupportedDialog</a></span>&#8203;(boolean&nbsp;shouldShowNotSupportedDialog)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setShowMrzDots(boolean)">setShowMrzDots</a></span>&#8203;(boolean&nbsp;shouldShowMrzDots)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
+<td class="colFirst"><code><a href="DocumentVerificationOverlaySettings.Builder.html" title="class in com.microblink.documentverification.fragment.overlay.documentverification.settings">DocumentVerificationOverlaySettings.Builder</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setShowNotSupportedDialog(boolean)">setShowNotSupportedDialog</a></span>&#8203;(boolean&nbsp;shouldShowNotSupportedDialog)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="DocumentVerificationOverlaySettings.Builder.html" title="class in com.microblink.documentverification.fragment.overlay.documentverification.settings">DocumentVerificationOverlaySettings.Builder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setShowTooltipTimeIntervalMs(long)">setShowTooltipTimeIntervalMs</a></span>&#8203;(long&nbsp;showTooltipTimeIntervalMs)</code></th>
 <td class="colLast">
 <div class="block">Sets time interval between the start of the tilt step and displaying the help tooltip.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="DocumentVerificationOverlaySettings.Builder.html" title="class in com.microblink.documentverification.fragment.overlay.documentverification.settings">DocumentVerificationOverlaySettings.Builder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setSplashResourceId(int)">setSplashResourceId</a></span>&#8203;(int&nbsp;splashResourceId)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="DocumentVerificationOverlaySettings.Builder.html" title="class in com.microblink.documentverification.fragment.overlay.documentverification.settings">DocumentVerificationOverlaySettings.Builder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setTiltStartTimeIntervalMs(long)">setTiltStartTimeIntervalMs</a></span>&#8203;(long&nbsp;tiltStartTimeInterval)</code></th>
 <td class="colLast">
 <div class="block">Sets time interval between neutral tilt step and first tilt step (left, right, top or down).</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="DocumentVerificationOverlaySettings.Builder.html" title="class in com.microblink.documentverification.fragment.overlay.documentverification.settings">DocumentVerificationOverlaySettings.Builder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setTiltStepTimeoutIntervalMs(long)">setTiltStepTimeoutIntervalMs</a></span>&#8203;(long&nbsp;tiltStepTimeoutInterval)</code></th>
 <td class="colLast">
@@ -586,7 +591,7 @@ public&nbsp;<a href="DocumentVerificationOverlaySettings.Builder.html" title="cl
 <a id="setKeepScreenOn(boolean)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>setKeepScreenOn</h4>
 <pre class="methodSignature">@NonNull
@@ -594,6 +599,20 @@ public&nbsp;<a href="DocumentVerificationOverlaySettings.Builder.html" title="cl
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="options/DocumentVerificationOverlaySettingsOptions.html#setKeepScreenOn(boolean)">setKeepScreenOn</a></code>&nbsp;in interface&nbsp;<code><a href="options/DocumentVerificationOverlaySettingsOptions.html" title="interface in com.microblink.documentverification.fragment.overlay.documentverification.settings.options">DocumentVerificationOverlaySettingsOptions</a>&lt;<a href="DocumentVerificationOverlaySettings.Builder.html" title="class in com.microblink.documentverification.fragment.overlay.documentverification.settings">DocumentVerificationOverlaySettings.Builder</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a id="setDocumentTypeUi(com.microblink.documentverification.fragment.overlay.documentverification.settings.options.DocumentTypeUi)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>setDocumentTypeUi</h4>
+<pre class="methodSignature">@NonNull
+public&nbsp;<a href="DocumentVerificationOverlaySettings.Builder.html" title="class in com.microblink.documentverification.fragment.overlay.documentverification.settings">DocumentVerificationOverlaySettings.Builder</a>&nbsp;setDocumentTypeUi&#8203;(<a href="options/DocumentTypeUi.html" title="enum in com.microblink.documentverification.fragment.overlay.documentverification.settings.options">DocumentTypeUi</a>&nbsp;documentTypeUi)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="options/DocumentVerificationOverlaySettingsOptions.html#setDocumentTypeUi(com.microblink.documentverification.fragment.overlay.documentverification.settings.options.DocumentTypeUi)">setDocumentTypeUi</a></code>&nbsp;in interface&nbsp;<code><a href="options/DocumentVerificationOverlaySettingsOptions.html" title="interface in com.microblink.documentverification.fragment.overlay.documentverification.settings.options">DocumentVerificationOverlaySettingsOptions</a>&lt;<a href="DocumentVerificationOverlaySettings.Builder.html" title="class in com.microblink.documentverification.fragment.overlay.documentverification.settings">DocumentVerificationOverlaySettings.Builder</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>

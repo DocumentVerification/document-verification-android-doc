@@ -1,5 +1,7 @@
 com.microblink.documentverification
 com.microblink.documentverification.activity
+com.microblink.documentverification.activity.result
+com.microblink.documentverification.activity.result.contract
 com.microblink.documentverification.directApi
 com.microblink.documentverification.entities
 com.microblink.documentverification.entities.recognizers
